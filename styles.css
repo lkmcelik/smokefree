@@ -38,23 +38,32 @@ header {
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 4rem 0;
     text-align: center;
 }
 
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (min-width: 768px) {
-    .hero {
+    .hero-container {
         flex-direction: row;
-        text-align: left;
+        align-items: center;
         gap: 2rem;
+        text-align: left;
+    }
+    
+    .hero-content {
+        text-align: left;
     }
 }
 
 .hero-content {
     flex: 1;
+    max-width: 100%;
 }
 
 .hero-img {
@@ -63,6 +72,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
