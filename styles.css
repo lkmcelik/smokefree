@@ -60,6 +60,9 @@ header {
 .hero-img {
     flex: 1;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -251,4 +254,12 @@ footer {
 
 .text-center {
     text-align: center;
+}
+
+.example-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 1rem;
 } 
